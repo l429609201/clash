@@ -1,0 +1,46 @@
+# 国外DNS控制是否走代理
+# PROCESS-NAME,curl,DIRECT #匹配路由自身进程(curl直连)
+# DOMAIN-SUFFIX,google.com,Proxy #匹配域名后缀(交由Proxy代理服务器组)
+# DOMAIN-KEYWORD,google,Proxy #匹配域名关键字(交由Proxy代理服务器组)
+# DOMAIN,google.com,Proxy #匹配域名(交由Proxy代理服务器组)
+# DOMAIN-SUFFIX,ad.com,REJECT #匹配域名后缀(拒绝)
+# IP-CIDR,127.0.0.0/8,DIRECT #匹配数据目标IP(直连)
+# SRC-IP-CIDR,192.168.1.201/32,DIRECT #匹配数据发起IP(直连)
+# DST-PORT,80,DIRECT #匹配数据目标端口(直连)
+# SRC-PORT,7777,DIRECT #匹配数据源端口(直连)  
+
+# Google Public DNS
+IP-CIDR,8.8.8.8/32
+IP-CIDR,8.8.4.4/32
+DOMAIN,dns.google
+DOMAIN,dns64.dns.google
+
+# Cloudflare DNS
+IP-CIDR,1.1.1.1
+IP-CIDR,1.0.0.1
+DOMAIN,cloudflare-dns.com
+DOMAIN,dns.cloudflare.com
+
+# Quad9 DNS  
+IP-CIDR,9.9.9.9
+IP-CIDR,149.112.112.112
+IP-CIDR,149.112.112.9
+DOMAIN,dns.quad9.net
+DOMAIN,dns9.quad9.net
+
+# DNS.SB     
+IP-CIDR,185.222.222.222
+IP-CIDR,45.11.45.11
+DOMAIN,doh.dns.sb
+DOMAIN,doh.sb
+
+# Cisco OpenDNS/Cisco Umbrella 
+IP-CIDR,208.67.222.222
+IP-CIDR,208.67.220.220
+DOMAIN,doh.opendns.com
+DOMAIN,doh.umbrella.com
+
+# AdGuard DNS         
+IP-CIDR,94.140.14.14
+IP-CIDR,94.140.15.15
+DOMAIN,dns.adguard-dns.com
