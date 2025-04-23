@@ -8,6 +8,17 @@
 # SRC-IP-CIDR,192.168.1.201/32,DIRECT #匹配数据发起IP(直连)
 # DST-PORT,80,DIRECT #匹配数据目标端口(直连)
 # SRC-PORT,7777,DIRECT #匹配数据源端口(直连)  
+DOMAIN,dns.google
+DOMAIN,dns64.dns.google
+DOMAIN,cloudflare-dns.com
+DOMAIN,dns.cloudflare.com
+DOMAIN,dns.quad9.net
+DOMAIN,dns9.quad9.net   
+DOMAIN,doh.dns.sb
+DOMAIN,doh.sb
+DOMAIN,doh.opendns.com
+DOMAIN,doh.umbrella.com      
+DOMAIN,dns.adguard-dns.com
 IP-CIDR,8.8.8.8/32
 IP-CIDR,8.8.4.4/32
 IP-CIDR,1.1.1.1/32
@@ -21,14 +32,3 @@ IP-CIDR,185.222.222.222/32
 IP-CIDR,45.11.45.11/32
 IP-CIDR,208.67.222.222/32
 IP-CIDR,208.67.220.220/32
-DOMAIN,dns.google
-DOMAIN,dns64.dns.google
-DOMAIN,cloudflare-dns.com
-DOMAIN,dns.cloudflare.com
-DOMAIN,dns.quad9.net
-DOMAIN,dns9.quad9.net   
-DOMAIN,doh.dns.sb
-DOMAIN,doh.sb
-DOMAIN,doh.opendns.com
-DOMAIN,doh.umbrella.com      
-DOMAIN,dns.adguard-dns.com
